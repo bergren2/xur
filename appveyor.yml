@@ -8,12 +8,12 @@ branches:
 
 before_build:
   - cmd: dotnet --version
-  - cmd: dotnet restore ./src/src.csproj --verbosity m
+  - cmd: dotnet restore ./src/Xur.csproj --verbosity m
 
 build_script:
-  - cmd: dotnet publish ./src/src.csproj
+  - cmd: dotnet publish ./src/Xur.csproj
 
 test_script:
-  - cmd: dotnet restore ./tests/tests.csproj --verbosity m
+  - cmd: dotnet restore ./tests/XurTests.csproj --verbosity m
   - cmd: cd tests
   - cmd: dotnet xunit
