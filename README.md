@@ -1,3 +1,5 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/8x5r18mcakthpwhs?svg=true)](https://ci.appveyor.com/project/bergren2/xur)
+
 # Xur
 
 This is the Nine.
