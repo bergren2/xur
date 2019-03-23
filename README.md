@@ -22,6 +22,12 @@ they support. For example:
 - Tools that don't necessarily support an application
 - MVP, proof-of-concept tools and apps
 
+## Development
+
+    $ dotnet run --project src/Xur.csproj
+
+Then go to https://localhost:5001/.
+
 ## License
 
 See LICENSE for details.
