@@ -1,0 +1,19 @@
+version: 1.0.{build}
+image: .NET Core 2.2 runtime version 2.2.1
+shallow_clone: true
+deploy: off
+branches:
+  only:
+  - master
+
+before_build:
+  - cmd: dotnet --version
+  - cmd: dotnet restore ./src/src.csproj --verbosity m
+
+build_script:
+  - cmd: dotnet publish ./src/src.csproj
+
+test_script:
+  - cmd: dotnet restore ./tests/tests.csproj --verbosity m
+  - cmd: cd tests
+  - cmd: dotnet xunit
